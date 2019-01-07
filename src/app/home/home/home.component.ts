@@ -18,8 +18,8 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
-  onNewToDo(event: any) {
-    this.newToDoItem = event.target.value;
+  onNewToDo(value:string) {
+    this.newToDoItem = value;
   }
 
   onSaveClicked() {

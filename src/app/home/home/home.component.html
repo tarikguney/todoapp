@@ -13,7 +13,7 @@
 
       <mat-card-actions>
           <mat-form-field class="new-todo">
-            <input matInput placeholder="New todo item..." value="" (keyup)="onNewToDo($event)">
+            <input matInput placeholder="New todo item..." value="" #newTodo (keyup)="onNewToDo(newTodo.value)">
           </mat-form-field>
           
           <button mat-raised-button color="primary" (click)="onSaveClicked()">Save</button>
