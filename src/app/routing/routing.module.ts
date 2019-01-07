@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router'
 
-import { MainComponent } from "../todo/main/main.component"
+import { HomeComponent } from "../home/home/home.component"
 
 // Add more routes here...
 const routes: Routes = [
-  { path: "home", component: MainComponent },
+  { path: "home", component: HomeComponent },
   { path: "", redirectTo: '/home', pathMatch: 'full' }
 ]
 
