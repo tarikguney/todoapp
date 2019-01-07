@@ -2,6 +2,9 @@
 
 This application is written for the purpose of an exercise. It uses various Angular elements such as Modules, Components, Routing, etc. 
 
+### Note
+Strictly speaking, it is developed with Angular 7. Therefore, I cannot guarantee that it will work with different versions of Angular. 
+
 Check out the source code to learn more about it.
 
 The application contains only front-end and does not interact with any server side. 
