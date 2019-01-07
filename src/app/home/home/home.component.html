@@ -1,3 +1,5 @@
-<p>
-  home works!
-</p>
+<mat-selection-list>
+  <mat-list-option checkboxPosition="before" *ngFor="let todo of todoList">
+    {{todo.name}}
+  </mat-list-option>
+</mat-selection-list>
