@@ -1,5 +1,6 @@
 import { Injectable } from "@angular/core";
 import { ToDoModel } from "./todomodel";
+import * as uuid from "uuid/v1";
 
 
 @Injectable(
@@ -11,10 +12,10 @@ export class ToDoService {
     
     constructor() {
         this.existingItems = [
-            { id: 1, name: "Wash the dishes" },
-            { id: 2, name: "Finish Angular book" },
-            { id: 3, name: "Water the plants" },
-            { id: 4, name: "Sing a song" }
+            { id: uuid(), name: "Wash the dishes" },
+            { id: uuid(), name: "Finish Angular book" },
+            { id: uuid(), name: "Water the plants" },
+            { id: uuid(), name: "Sing a song" }
         ];
     }
 

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ToDoModel } from "./todomodel"
 import { ToDoService } from './todoservice';
 import { MatSelectionListChange } from '@angular/material';
+import * as uuid from "uuid/v1";
 
 @Component({
   selector: 'app-home',
@@ -28,7 +29,7 @@ export class HomeComponent implements OnInit {
   }
 
   onSaveClicked() {
-    this.todoService.saveTodoItem({ name: this.newToDoItem, id: 1 });
+    this.todoService.saveTodoItem({ name: this.newToDoItem, id:uuid() });
   }
 
   onSelectionChanged(event: MatSelectionListChange) {
