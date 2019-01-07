@@ -1,8 +1,11 @@
-import { IToDoService } from "./itodoservice"
-import { ToDoModel } from "./todomodel"
+import { Injectable } from "@angular/core";
+import { ToDoModel } from "./todomodel";
 
-export class ToDoService implements IToDoService{
-    
+
+@Injectable(
+    {providedIn:"root"}
+)
+export class ToDoService {
     getExistingToDoItems(): ToDoModel[] {
         return [
             { id: 1, name: "Wash the dishes" },
@@ -12,7 +15,7 @@ export class ToDoService implements IToDoService{
         ];
     }
 
-    saveTodoItem(todoModel: ToDoModel){
+    saveTodoItem(todoModel: ToDoModel) {
         // todo implement this method.
         "Not yet implemented."
     }

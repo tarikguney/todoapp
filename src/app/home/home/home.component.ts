@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ToDoModel } from "./todomodel"
-import { IToDoService } from "./itodoservice"
 
 @Component({
   selector: 'app-home',
