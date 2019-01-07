@@ -1,5 +1,25 @@
-<mat-selection-list>
-  <mat-list-option checkboxPosition="before" *ngFor="let todo of todoList">
-    {{todo.name}}
-  </mat-list-option>
-</mat-selection-list>
+<div class="todo-screen">
+  <div class="todo-container">
+    <mat-card class="todo-content">
+      <mat-card-title>Active Items</mat-card-title>
+      <mat-card-content>
+        <mat-selection-list>
+          <mat-list-option checkboxPosition="before" *ngFor="let todo of todoList">
+            {{todo.name}}
+          </mat-list-option>
+        </mat-selection-list>
+
+      </mat-card-content>
+
+      <mat-card-actions>
+          <mat-form-field class="new-todo">
+            <input matInput placeholder="New todo item..." value="" (keyup)="onNewToDo($event)">
+          </mat-form-field>
+          
+          <button mat-raised-button color="primary" (click)="onSaveClicked()">Save</button>
+
+      </mat-card-actions>
+
+    </mat-card>
+  </div>
+</div>

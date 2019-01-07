@@ -9,11 +9,20 @@ import { ToDoService } from './todoservice';
 })
 export class HomeComponent implements OnInit {
   todoList: ToDoModel[]
+  newToDoItem: string;
 
   constructor(private todoService: ToDoService) {
     this.todoList = todoService.getExistingToDoItems();
   }
 
   ngOnInit() {
+  }
+
+  onNewToDo(event: any) {
+    this.newToDoItem = event.target.value;
+  }
+
+  onSaveClicked() {
+    this.todoService.saveTodoItem({ name: this.newToDoItem, id: 1 });
   }
 }

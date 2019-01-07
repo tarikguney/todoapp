@@ -6,8 +6,11 @@ import { ToDoModel } from "./todomodel";
     {providedIn:"root"}
 )
 export class ToDoService {
-    getExistingToDoItems(): ToDoModel[] {
-        return [
+
+    existingItems: ToDoModel[];
+    
+    constructor() {
+        this.existingItems = [
             { id: 1, name: "Wash the dishes" },
             { id: 2, name: "Finish Angular book" },
             { id: 3, name: "Water the plants" },
@@ -15,8 +18,11 @@ export class ToDoService {
         ];
     }
 
+    getExistingToDoItems(): ToDoModel[] {
+        return this.existingItems;
+    }
+
     saveTodoItem(todoModel: ToDoModel) {
-        // todo implement this method.
-        "Not yet implemented."
+        this.existingItems.push(todoModel);
     }
 }
