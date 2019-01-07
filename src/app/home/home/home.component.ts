@@ -4,6 +4,7 @@ import { ToDoService } from './todoservice';
 import { MatSelectionListChange } from '@angular/material';
 import * as uuid from "uuid/v1";
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -34,6 +35,5 @@ export class HomeComponent implements OnInit {
 
   onSelectionChanged(event: MatSelectionListChange) {
     this.selectedOptions = event.source.selectedOptions.selected.map(a => String(a.getLabel()));
-    console.log(this.selectedOptions);
   }
 }
