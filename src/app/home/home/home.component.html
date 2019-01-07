@@ -3,9 +3,9 @@
     <mat-card class="todo-content">
       <mat-card-title>Active Items</mat-card-title>
       <mat-card-content>
-        <mat-selection-list>
-          <mat-list-option checkboxPosition="before" *ngFor="let todo of todoList">
-            {{todo.name}}
+        <mat-selection-list (selectionChange)="onSelectionChanged($event)">
+          <mat-list-option  checkboxPosition="before" *ngFor="let todo of todoList">
+            <span [style.textDecoration]="selectedOptions.includes(todo.name) ? 'line-through' : ''">{{todo.name}}</span>
           </mat-list-option>
         </mat-selection-list>
 
