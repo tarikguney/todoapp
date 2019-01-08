@@ -44,5 +44,7 @@ export class HomeComponent implements OnInit {
         this.todoList.splice(index, 1);
       }
     });
+
+    this.selectedOptions = [];
   }
 }
