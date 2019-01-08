@@ -1,4 +1,4 @@
-# ToDo Application
+# ToDo App
 
 This application is written for the purpose of an exercise. It uses various Angular elements such as Modules, Components, Routing, etc. 
 
@@ -11,11 +11,12 @@ Strictly speaking, this application is developed with Angular 7. Therefore, I ca
 
 # How to run?
 
-1. Clone it with `git clone git@github.com:tarikguney/todoapp`
-2. Make sure you have Angular CLI installed. If you don't, then run `npm install @angular/cli` to install it.
-3. Run `ng serve` in the location where `todoapp` source code resides.
-4. Visit the web site the Angular CLI started.
+- Clone it with `git clone git@github.com:tarikguney/todoapp`
+- Make sure you have Angular CLI installed. If you don't have it, then run `npm install @angular/cli` to install it.
+- Install all of the dependencies by running `npm install` in the same directory this project resides on your local machine.
+- Run `ng serve` in the location where `todoapp` source code resides. Angular, by default, uses `4200` port. You can change it by passing `--port [portnumber]` flag. For instance, `ng serve --port 4201`
+- Visit the web site the Angular CLI started. Usually the website is `locahost:4200` unless you specified a different port number.
 
-After these steps, if you cannot start the website, perhaps you should learn Angular as the first thing.
+You can find more information about the Angular CLI here: https://angular.io/cli
 
 Developed by @tarikguney.
