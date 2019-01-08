@@ -1,22 +1,32 @@
 <div class="todo-screen">
   <div class="todo-container">
     <mat-card class="todo-content">
-      <mat-card-title>Active Items</mat-card-title>
+      <mat-card-title>Todo Items
+        <button mat-icon-button [matMenuTriggerFor]="appMenu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+      </mat-card-title>
+
       <mat-card-content>
+        <mat-menu #appMenu="matMenu">
+          <button mat-menu-item (click)="onRemoveItemsClicked()">Remove finished items</button>
+        </mat-menu>
+
         <mat-selection-list (selectionChange)="onSelectionChanged($event)">
           <mat-list-option checkboxPosition="before" *ngFor="let todo of todoList">
-            <span [style.textDecoration]="selectedOptions.includes(todo.name) ? 'line-through' : ''">{{todo.name}}</span>
+            <span
+              [style.textDecoration]="selectedOptions.includes(todo.name) ? 'line-through' : ''">{{todo.name}}</span>
           </mat-list-option>
         </mat-selection-list>
 
       </mat-card-content>
 
       <mat-card-actions>
-          <mat-form-field class="new-todo">
-            <input matInput placeholder="New todo item..." value="" #newTodo (keyup)="onNewToDo(newTodo.value)">
-          </mat-form-field>
-          
-          <button mat-raised-button color="primary" (click)="onSaveClicked()">Save</button>
+        <mat-form-field class="new-todo">
+          <input matInput placeholder="New todo item..." value="" #newTodo (keyup)="onNewToDo(newTodo.value)">
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" (click)="onSaveClicked()">Save</button>
 
       </mat-card-actions>
 

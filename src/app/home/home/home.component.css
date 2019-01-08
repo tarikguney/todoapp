@@ -16,3 +16,9 @@
     padding-left:10px;
     padding-right:10px;
 }
+
+.remove-button-container{
+  display:flex;
+  width:100px;
+  align-content: flex-end;
+}
