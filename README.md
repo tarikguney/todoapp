@@ -19,7 +19,7 @@ Strictly speaking, this application is developed with Angular 7. Therefore, I ca
 
 ## Take a peek
 
-![screenshot](screenshot.gif)
+![screenshot](./screenshot.gif)
 
 You can find more information about the Angular CLI here: https://angular.io/cli
 
