@@ -11,7 +11,7 @@ Strictly speaking, this application is developed with Angular 7. Therefore, I ca
 
 # How to run?
 
-- Clone it with `git clone git@github.com:tarikguney/todoapp`
+- Clone it with `git clone https://github.com/tarikguney/todoapp.git` (or `git clone git@github.com:tarikguney/todoapp.git` if you have SSH installed.)
 - Make sure you have Angular CLI installed. If you don't have it, then run `npm install @angular/cli` to install it.
 - Install all of the dependencies by running `npm install` in the same directory this project resides on your local machine.
 - Run `ng serve` in the location where `todoapp` source code resides. Angular, by default, uses `4200` port. You can change it by passing `--port [portnumber]` flag. For instance, `ng serve --port 4201`
