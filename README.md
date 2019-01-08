@@ -17,6 +17,10 @@ Strictly speaking, this application is developed with Angular 7. Therefore, I ca
 - Run `ng serve` in the location where `todoapp` source code resides. Angular, by default, uses `4200` port. You can change it by passing `--port [portnumber]` flag. For instance, `ng serve --port 4201`
 - Visit the web site the Angular CLI started. Usually the website is `locahost:4200` unless you specified a different port number.
 
+## Take a peek
+
+![screenshot](screenshot.gif)
+
 You can find more information about the Angular CLI here: https://angular.io/cli
 
 Developed by @tarikguney.
