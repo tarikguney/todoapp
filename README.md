@@ -2,7 +2,7 @@
 
 > This app is still under occasional development; hence, the `readme.md` file may not be totally up-to-date. The code itself will explain the true capabilities. Therefore, please refer to the source code for more complete information.
 
-This application is written for the purpose of an exercise. It uses various Angular elements such as Modules, Components, Routing, Route Guards, etc. 
+This application is written for the purpose of an exercise. It uses various Angular elements such as **Modules**, **Components**, **Routing**, **Route Guards**, etc. 
 
 Check out the source code to learn more about it.
 
