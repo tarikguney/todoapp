@@ -26,3 +26,5 @@ Strictly speaking, this application is developed with Angular 7. Therefore, I ca
 You can find more information about the Angular CLI here: https://angular.io/cli
 
 Developed by @tarikguney.
+
+![main](main.gif)
