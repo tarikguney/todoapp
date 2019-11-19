@@ -9,7 +9,8 @@ Check out the source code to learn more about it.
 The application contains only front-end and does not interact with any server side. 
 
 ### Note
-Strictly speaking, this application is developed with Angular 7. Therefore, I cannot guarantee that it will work with the other versions of Angular. 
+Strictly speaking, this application was developed with Angular 7.
+It was then updated and tested in Angular 8, which was then updated and tested in Angular 9.0.0-rc.0. Therefore, I cannot guarantee that it will work with the other versions of Angular.
 
 # How to run?
 
